@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Voice Note: Privacy Policy</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<h1>Smart Voice Note: Privacy Policy</h1>
+<p class="meta">Last updated: [DD Month YYYY]</p>
+<h2>1. Who we are and how to contact us</h2>
+<p><strong>Effective date:</strong> [DD Month YYYY, fill in when published]</p>
+<p>Smart Voice Note ("the App") is an Android app that turns your voice into text and helps you improve text with AI. The App is published by [Publisher name] ("we", "us"). This policy explains what information the App handles, why, and what choices you have.</p>
+<p>For any privacy question or request, write to <strong><a href="mailto:info@autologic.online">info@autologic.online</a></strong>.</p>
+<h2>2. Information we collect and store</h2>
+<p>We keep the information we collect to a minimum.</p>
+<p><strong>Stored on our servers (Supabase):</strong></p>
+<ul>
+<li><strong>Account details, only if you sign in:</strong> your email address and, if Google shares them, your name and profile picture (kept by our sign-in system), plus an internal user ID. We never receive your Google password.</li>
+<li><strong>Plan details:</strong> your plan (free, trial or paid), trial start date, plan expiry date, account creation date, and the last time you used the App.</li>
+<li><strong>Usage count:</strong> how many AI requests you make each day. This is a number only, never the content.</li>
+<li><strong>Trial device marker:</strong> a one-way hash of your Android device ID and the date a free trial was used (see section 6).</li>
+<li><strong>Feedback you send:</strong> your message and basic device details (see section 7).</li>
+<li><strong>Password, only if you set one:</strong> stored only as a one-way hash (see section 4).</li>
+</ul>
+<p><strong>Stored only on your device (we do not receive it):</strong></p>
+<ul>
+<li>Your notes, transcripts and history.</li>
+<li>Your Gemini API key, in encrypted storage (see section 5).</li>
+<li>App settings such as language and theme.</li>
+<li><strong>A temporary recording file:</strong> while you record, the App writes a temporary audio file in its private cache. It is deleted as soon as the text is produced, when you start a new recording, or when you leave the App. If a transcription fails (for example, no internet), the file is kept briefly so you can tap Retry. Rarely, if the App crashes or is force-stopped, a leftover temporary file may stay in the App's private cache until Android clears it. We never receive this file.</li>
+</ul>
+<p><strong>What we do not collect:</strong> your contacts, photos or location. We do not store your voice recordings or text on our servers. The App has no advertising, analytics or crash-reporting services. We do not sell your personal information.</p>
+<h2>3. How your voice and text are used</h2>
+<p>The App turns your voice into text and can refine text with AI. To do this, it uses Google's Gemini service.</p>
+<ul>
+<li>When you record or upload audio, the audio is sent <strong>directly from your device to Google's Gemini service</strong>, using <strong>your own API key</strong>. When you use an AI mode (such as refine or custom), the text you are working on is sent the same way.</li>
+<li>This content <strong>does not pass through our servers</strong>. We do not receive, see, store or log your audio or text.</li>
+<li>Google processes the content under its own terms and privacy policy. How Google may use it can depend on your Google account and API plan. Please read Google's Gemini API terms for details.</li>
+<li>The resulting text is saved in your history <strong>on your device only</strong>.</li>
+<li><strong>Live mode</strong> uses your phone's built-in Android speech recognition, usually provided by Google or your device maker. Depending on your device and settings, your audio may be processed on the device or sent to that provider, under their own policies. We do not receive it.</li>
+</ul>
+<h2>4. Sign-in and password</h2>
+<p>You can use the App without an account. Signing in is optional and is used for plan and trial features.</p>
+<ul>
+<li><strong>Google Sign-In:</strong> when you sign in with Google, Google shares your email address and basic profile details (such as your name and profile picture) with our sign-in system. The App shows only your email. We never receive your Google password.</li>
+<li><strong>Optional App password:</strong> you may set a password in Profile ("Set or Change Password") so you can also sign in with your email and that password. This is separate from your Google password, and setting it does not change your Google account. We store only a one-way encrypted (hashed) version, so we cannot see or recover it. If you forget it, sign in with Google and set a new one.</li>
+<li><strong>Sign-in session:</strong> after you sign in, the App keeps sign-in tokens in encrypted storage on your device. Signing out removes them from your device.</li>
+</ul>
+<h2>5. Your API key</h2>
+<p>The App works with your own Google Gemini API key.</p>
+<ul>
+<li>Your key is stored <strong>on your device only</strong>, in encrypted storage protected by the Android Keystore. It is <strong>not sent to our servers</strong>.</li>
+<li>It is <strong>excluded from Android backups and device transfers</strong>. If you reinstall the App or move to a new phone, you add your key again.</li>
+<li>It is used only to authorize the requests the App sends to Google's Gemini service on your behalf.</li>
+<li>You can remove it at any time in Profile → API key.</li>
+<li>Keep your key private. Anyone who has it can use your Google quota.</li>
+</ul>
+<h2>6. Device identifier and free trial</h2>
+<p>To stop the free trial from being used again and again, the App creates a one-way hash (SHA-256) of your Android device ID and stores it, with the date the trial was used, on our servers.</p>
+<ul>
+<li>We do not store the raw device ID, and the hash cannot be turned back into it.</li>
+<li>It is used only to prevent repeated trials.</li>
+<li>If you delete your account, this marker stays, but it is not linked to your account or email, so the trial cannot be started again on the same device.</li>
+</ul>
+<h2>7. Feedback and support</h2>
+<p>If you send feedback from the App, we store:</p>
+<ul>
+<li>your message (up to 500 characters);</li>
+<li>the App version, device model, Android version, language and plan;</li>
+<li>your user ID, if you are signed in.</li>
+</ul>
+<p>We use this only to understand problems and improve the App. Please do not include sensitive personal information in your message. Feedback linked to your account is deleted when your account is deleted.</p>
+<h2>8. Who we share information with</h2>
+<p>We do not sell your personal information. We share it only as follows:</p>
+<ul>
+<li><strong>Supabase</strong> hosts our database and sign-in system. Our project's servers are in Asia.</li>
+<li><strong>Google</strong> provides Google Sign-In and the Gemini service the App uses (see section 3). Google handles that data under its own privacy policy.</li>
+<li><strong>Legal reasons:</strong> we may disclose information if required by law or to protect our rights and users' safety.</li>
+</ul>
+<p>The App currently has no advertising or analytics services. If we add any in future, we will update this policy first.</p>
+<h2>9. Permissions the App uses</h2>
+<ul>
+<li><strong>Microphone:</strong> to record your voice for transcription.</li>
+<li><strong>Internet:</strong> to reach Google Gemini and our servers.</li>
+<li><strong>Display over other apps:</strong> only for the Quick Tap floating button, if you turn Quick Tap on.</li>
+<li><strong>Foreground service (microphone):</strong> keeps Quick Tap recording working while you use other apps, only while Quick Tap is on.</li>
+<li><strong>Notifications:</strong> to show the "Quick Tap is on" notice (with Open app and Stop actions) while Quick Tap is on.</li>
+</ul>
+<p>You can change these permissions at any time in your phone's settings.</p>
+<h2>10. How long we keep information</h2>
+<ul>
+<li><strong>Account and plan data:</strong> while your account exists.</li>
+<li><strong>Feedback linked to your account:</strong> deleted with your account.</li>
+<li><strong>Trial device marker:</strong> kept to prevent repeated trials (see section 6).</li>
+<li><strong>Data on your device:</strong> until you delete it or uninstall the App.</li>
+</ul>
+<h2>11. Deleting your account and data</h2>
+<p><strong>In the App:</strong> go to Profile → Delete Account.</p>
+<ul>
+<li>You are signed out and your deletion request starts a <strong>7-day waiting period</strong>.</li>
+<li>If you sign in again within 7 days, the deletion is cancelled automatically.</li>
+<li>After 7 days, your account is permanently deleted, including your email, plan and usage data, password, and feedback linked to your account.</li>
+</ul>
+<p><strong>By email:</strong> write to <strong><a href="mailto:info@autologic.online">info@autologic.online</a></strong> from the email address registered to your account with the subject "Delete my account". We will process it within 14 days.</p>
+<p><strong>What remains:</strong> the one-way trial device marker (section 6), which is not linked to you. Data stored only on your device can be removed by clearing the App's data or uninstalling it.</p>
+<h2>12. Security</h2>
+<ul>
+<li>Data between the App and our servers or Google is sent over HTTPS.</li>
+<li>Our database uses row-level access rules so users can reach only their own records.</li>
+<li>Your sign-in session and API key are kept in encrypted storage on your device.</li>
+<li>Passwords are stored only as one-way hashes.</li>
+</ul>
+<p>No system is perfectly secure, but we work to protect your information.</p>
+<h2>13. Children</h2>
+<p>The App is not directed to children under [13]. We do not knowingly collect personal information from them. If you believe a child has given us information, contact <a href="mailto:info@autologic.online">info@autologic.online</a> and we will delete it.</p>
+<h2>14. Changes to this policy</h2>
+<p>We may update this policy from time to time. We will change the effective date at the top and, for important changes, tell you in the App. Continued use after a change means you accept the updated policy.</p>
+<h2>15. Contact</h2>
+<p>Questions or requests about privacy or your data: <strong><a href="mailto:info@autologic.online">info@autologic.online</a></strong></p>
+<nav><a href="terms.html">Terms of Use</a></nav>
+</main></body></html>
